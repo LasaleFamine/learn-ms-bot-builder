@@ -133,7 +133,7 @@ You can use:
 - [ngrok](https://ngrok.com/)
 - [Heroku](https://www.heroku.com/)
 - [now](https://zeit.co/now)
-- everything will make your app available to the world!
+- everything will make your app available to the world! 
 
 Almost ready.
 Last step is to register the bot and get the ***appId*** and ***appSecret*** to update our `.env`.
