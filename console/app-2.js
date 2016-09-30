@@ -3,7 +3,7 @@
   *
   **/
 
-const { builder, bot } = require('./../config.js')
+const { builder, bot } = require('./config.js')
 
 bot.dialog('/', new builder.IntentDialog()
     .matches(/^hello/i, function (session) {

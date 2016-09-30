@@ -1,15 +1,21 @@
 {
-  "name": "bottweet",
+  "name": "learn-ms-bot-builder",
   "version": "0.0.1",
   "description": "Testing the Microsoft Bot Builder Framework",
   "main": "app.js",
   "scripts": {
+    "start": "cd chatConnector && node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lasalefamine/learn-ms-bot-builder.git"
   },
   "author": "LasaleFamine",
   "license": "ISC",
   "dependencies": {
     "botbuilder": "^3.2.3",
+    "dotenv": "^2.0.0",
     "restify": "^4.1.1"
   }
 }

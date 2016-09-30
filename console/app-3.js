@@ -3,7 +3,7 @@
   *
   **/
 
-const { builder, bot } = require('./../config.js')
+const { builder, bot } = require('./config.js')
 
 bot.dialog('/', new builder.SimpleDialog(function (session, results) {
     if (results && results.response) {
