@@ -1,6 +1,9 @@
 {
   "name": "learn-ms-bot-builder",
   "version": "0.0.1",
+  "engines": {
+    "node": "6.2.0"
+  },
   "description": "Testing the Microsoft Bot Builder Framework",
   "main": "app.js",
   "scripts": {
