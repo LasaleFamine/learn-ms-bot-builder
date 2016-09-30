@@ -23,10 +23,6 @@ E.g.
 
 And start interact with the "console bot".
 
-## Structure
-
-Right now there are present only some tests with the `ConsoleConnector`.  
-The really simple configuration for all the script within the `console` folder is the `config.js` file.
 
 ## Core concepts ([ref](https://docs.botframework.com/en-us/node/builder/guides/core-concepts/#navtitle))
 
@@ -134,9 +130,15 @@ server.post('/api/messages', connector.listen())
 Now you are ready to publish your simple NodeJs Bot.  
 You can use:
 - [Microsoft Bot Emulator](https://docs.botframework.com/en-us/tools/bot-framework-emulator/)
-TODO:
-- [ngrok]()
-https://docs.botframework.com/en-us/csharp/builder/sdkreference/gettingstarted.html#registering
+- [ngrok](https://ngrok.com/)
+- [Heroku](https://www.heroku.com/)
+- [now](https://zeit.co/now)
+- everything will make your app available to the world!
+
+Almost ready.
+Last step is to register the bot and get the ***appId*** and ***appSecret*** to update our `.env`.
+
+- [Register an MS bot (documentation)](https://docs.botframework.com/en-us/csharp/builder/sdkreference/gettingstarted.html#registering)
 
 ## References
 
