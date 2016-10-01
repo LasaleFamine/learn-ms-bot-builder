@@ -4,11 +4,16 @@
   "engines": {
     "node": "6.2.0"
   },
+  "xo": {
+    "esnext": true,
+    "semicolon": false,
+    "space": 2
+  },
   "description": "Testing the Microsoft Bot Builder Framework",
   "main": "app.js",
   "scripts": {
     "start": "cd chatConnector && node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "xo"
   },
   "repository": {
     "type": "git",
@@ -18,7 +23,12 @@
   "license": "ISC",
   "dependencies": {
     "botbuilder": "^3.2.3",
-    "dotenv": "^2.0.0",
+    "got": "^6.5.0",
+    "moment": "^2.15.1",
     "restify": "^4.1.1"
+  },
+  "devDependencies": {
+    "dotenv": "^2.0.0",
+    "xo": "^0.16.0"
   }
 }

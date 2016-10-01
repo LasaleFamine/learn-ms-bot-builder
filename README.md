@@ -1,5 +1,8 @@
 # Learning Microsoft Bot Builder Framework
 
+[![Build Status](https://travis-ci.org/lasalefamine/learn-ms-bot-builder.svg?branch=master)](https://travis-ci.org/lasalefamine/learn-ms-bot-builder)
+[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/lasalefamine/learn-ms-bot-builder)
+
 > Learning the new V3 Bot Framework by Microsoft
 
 This is an experimental repo where I'm trying some methods and structures of the framework.
@@ -28,6 +31,7 @@ And start interact with the "console bot".
 
 
 ### Storing data
+---
 
 
 ``` js
@@ -67,7 +71,8 @@ bot.dialog('/profile', [
 - **privateConversationData** stores information globally for a single conversation but its private data for the current user. This data spans all dialogs so it’s useful for storing temporary state that you want cleaned up when the conversation ends.
 - **dialogData** persists information for a single dialog instance. This is essential for storing temporary information in between the steps of a waterfall.
 
-### Intent
+### Intents
+---
 
 ``` js
 
@@ -94,6 +99,7 @@ Regular expressions are nice but for even more powerful **intent recognition you
 
 
 ### Chat Connector and online bot
+---
 
 Well, switch from the ConsoleConnector to the ChatConnector is simple as hell.
 
@@ -133,13 +139,34 @@ You can use:
 - [ngrok](https://ngrok.com/)
 - [Heroku](https://www.heroku.com/)
 - [now](https://zeit.co/now)
-- everything will make your app available to the world! 
+- everything will make your app available to the world!
+
 
 Almost ready.
 Last step is to register the bot and get the ***appId*** and ***appSecret*** to update our `.env`.
 
 - [Register an MS bot (documentation)](https://docs.botframework.com/en-us/csharp/builder/sdkreference/gettingstarted.html#registering)
 
+## :construction: `chatConnector/`
+
+Inside the `chatConnector` folder there is my first attempt to implement some functionalities and make it work like a ***cross-apps*** bot.
+I'm currently working on it.
+
+### Dependencies
+  - [restify]()
+  - [got](https://github.com/sindresorhus/got)
+  - [moment](http://momentjs.com/)
+  - [dotenv](https://github.com/motdotla/dotenv/) [DEV]
+
+## Tests
+
+> Only [xo](https://github.com/sindresorhus/xo) for now
+
+    $ npm test
+
 ## References
 
 - [Microsoft Bot Framework](https://dev.botframework.com/)
+
+### TODO
+- Unit

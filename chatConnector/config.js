@@ -1,30 +1,26 @@
 'use strict'
 
-//require('dotenv').config()
+//  require('dotenv').config()
 const builder = require('botbuilder')
 const restify = require('restify')
 
-
-
-//=========================================================
-// Bot Setup
-//=========================================================
+//  =========================================================
+//  Bot Setup
+//  =========================================================
 
 // Setup Restify Server
-const server = restify.createServer();
+const server = restify.createServer()
 server.listen(process.env.port || process.env.PORT || 8080, () => {
-   console.log(`${server.name} listening to ${server.url}`);
-});
+  console.log(`${server.name} listening to ${server.url}`)
+})
 
 const connector = new builder.ChatConnector({
-    appId: process.env.MICROSOFT_APP_ID,
-    appPassword: process.env.MICROSOFT_APP_PASSWORD
-});
+  appId: process.env.MICROSOFT_APP_ID,
+  appPassword: process.env.MICROSOFT_APP_PASSWORD
+})
 
 const bot = new builder.UniversalBot(connector)
 
-
 server.post('/api/messages', connector.listen())
 
-
-module.exports = { builder, bot, server }
+module.exports = {builder, bot, server}

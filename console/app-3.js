@@ -3,11 +3,11 @@
   *
   **/
 
-const { builder, bot } = require('./config.js')
+const {builder, bot} = require('./config.js')
 
-bot.dialog('/', new builder.SimpleDialog(function (session, results) {
-    if (results && results.response) {
-        session.send(results.response.toString('base64'));
-    }
-    builder.Prompts.text(session, "What would you like to base64 encode?");
-}));
+bot.dialog('/', new builder.SimpleDialog((session, results) => {
+  if (results && results.response) {
+    session.send(results.response.toString('base64'))
+  }
+  builder.Prompts.text(session, 'What would you like to base64 encode?')
+}))
