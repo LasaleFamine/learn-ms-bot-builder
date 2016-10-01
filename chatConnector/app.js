@@ -35,7 +35,7 @@ intents.matches(/github user/i, [
   (session, results) => {
     // Get data from github
     getGithubUser(results.response).then(res => {
-      const userData = JSON.stringify(user(res), null, '\t')
+      const userData = user(res)
       const msg = res.error ? res.message : userData
       session.send(msg)
     })
