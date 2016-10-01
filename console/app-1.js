@@ -20,8 +20,9 @@ bot.dialog('/ensureProfile', [
     session.dialogData.profile = args || {}
     if (session.dialogData.profile.name) {
       next()
+    } else {
+      builder.Prompts.text(session, 'What\'s your name?')
     }
-    builder.Prompts.text(session, 'What\'s your name?')
   },
   (session, results, next) => {
     if (results.response) {
@@ -29,8 +30,9 @@ bot.dialog('/ensureProfile', [
     }
     if (!session.dialogData.profile.company) {
       next()
+    } else {
+      builder.Prompts.text(session, 'What company do you work for?')
     }
-    builder.Prompts.text(session, 'What company do you work for?')
   },
   (session, results) => {
     if (results.response) {

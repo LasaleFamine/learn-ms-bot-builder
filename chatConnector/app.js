@@ -49,8 +49,9 @@ intents.onDefault([
   (session, args, next) => {
     if (session.userData.name) {
       next()
+    } else {      
+      session.beginDialog('/profile')
     }
-    session.beginDialog('/profile')
   },
   session => {
     session.send(`Hello ${session.userData.name}!
