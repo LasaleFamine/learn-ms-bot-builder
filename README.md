@@ -1,6 +1,6 @@
 # Learning Microsoft Bot Builder Framework
 
-[![Build Status](https://travis-ci.org/lasalefamine/learn-ms-bot-builder.svg?branch=master)](https://travis-ci.org/lasalefamine/learn-ms-bot-builder)
+[![Build Status](https://travis-ci.org/LasaleFamine/learn-ms-bot-builder.svg?branch=master)](https://travis-ci.org/lasalefamine/learn-ms-bot-builder)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/lasalefamine/learn-ms-bot-builder)
 
 > Learning the new V3 Bot Framework by Microsoft
