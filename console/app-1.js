@@ -28,7 +28,7 @@ bot.dialog('/ensureProfile', [
     if (results.response) {
       session.dialogData.profile.name = results.response
     }
-    if (!session.dialogData.profile.company) {
+    if (session.dialogData.profile.company) {
       next()
     } else {
       builder.Prompts.text(session, 'What company do you work for?')

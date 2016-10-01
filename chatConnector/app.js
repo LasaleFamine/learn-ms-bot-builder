@@ -49,15 +49,15 @@ intents.onDefault([
   (session, args, next) => {
     if (session.userData.name) {
       next()
-    } else {      
+    } else {
       session.beginDialog('/profile')
     }
   },
   session => {
     session.send(`Hello ${session.userData.name}!
-      I can:
-      - search a Github user
-      - change and persit your name :D
+  I can:
+    - search a Github user
+    - change and persit your name :D
     `)
   }
 ])
