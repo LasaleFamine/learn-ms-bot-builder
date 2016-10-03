@@ -135,8 +135,10 @@ server.post('/api/messages', connector.listen())
 
 Now you are ready to publish your simple NodeJs Bot.  
 You can use:
-- [Microsoft Bot Emulator](https://docs.botframework.com/en-us/tools/bot-framework-emulator/)
+**For testing**
+- [Microsoft Bot Emulator](https://docs.botframework.com/en-us/tools/bot-framework-emulator/) (only Windows)
 - [ngrok](https://ngrok.com/)
+**Deploy**
 - [Heroku](https://www.heroku.com/)
 - [now](https://zeit.co/now)
 - everything will make your app available to the world!
@@ -160,7 +162,7 @@ I'm currently working on it.
 
 ## Tests
 
-> Only [xo](https://github.com/sindresorhus/xo) for now
+> [xo](https://github.com/sindresorhus/xo) and [ava](https://github.com/avajs/ava)
 
     $ npm test
 
