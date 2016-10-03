@@ -29,7 +29,7 @@ following: 31,
 publicRepos: 27,
 publicGits: 4,
 created: 2015/06/26,
-reposUrl: https://api.github.com/users/LasaleFamine/repos 
+reposUrl: https://api.github.com/users/LasaleFamine/repos  
   `
   t.truthy(modelUser, 'User exists with details')
   t.deepEqual(modelUser, msg, 'correct information for the user')
