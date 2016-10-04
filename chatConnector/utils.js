@@ -4,6 +4,11 @@ const got = require('got')
 
 const getGithubUser = user => {
   return got(`https://api.github.com/users/${user}`, {
+    options: {
+      headers: {
+        Authorization: `token ${process.env.GITHUB_ACCESS_TOKEN}`
+      }
+    },
     json: true
   })
   .then(response => {
